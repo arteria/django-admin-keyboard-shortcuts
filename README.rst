@@ -1,12 +1,13 @@
 Django Admin Keyboard Shortcuts
 ============
 
-Keyboard Shortcuts for your Admin Backend
+Keyboard Shortcuts for your Admin Backend. Currently, only a "save" shortcut is implemented.
+
 
 Installation
 ------------
 
-To get the latest stable release from PyPi
+To get the latest stable release from PyPi (not yet available!)
 
 .. code-block:: bash
 
@@ -18,45 +19,34 @@ To get the latest commit from GitHub
 
     pip install -e git+git://github.com/arteria/django-admin-keyboard-shortcuts.git#egg=admin_keyboard_shortcuts
 
-TODO: Describe further installation steps (edit / remove the examples below):
+ 
+There are not further dependencies! 
 
-Add ``admin_keyboard_shortcuts`` to your ``INSTALLED_APPS``
+Add ``admin_keyboard_shortcuts`` to your ``INSTALLED_APPS`` before ``django.contrib.admin``
 
 .. code-block:: python
 
     INSTALLED_APPS = (
         ...,
         'admin_keyboard_shortcuts',
+		'django.contrib.admin', 
+		...,
     )
 
-Add the ``admin_keyboard_shortcuts`` URLs to your ``urls.py``
-
-.. code-block:: python
-
-    urlpatterns = patterns('',
-        ...
-        url(r'^app-url/', include('admin_keyboard_shortcuts.urls')),
-    )
-
-Before your tags/filters are available in your templates, load them by using
-
-.. code-block:: html
-
-	{% load admin_keyboard_shortcuts_tags %}
+ 
 
 
-Don't forget to migrate your database
+Don't forget to collect the icons
 
 .. code-block:: bash
 
-    ./manage.py migrate admin_keyboard_shortcuts
+    ./manage.py collectstatic
 
 
 Usage
 -----
 
-TODO: Describe usage or point to docs. Also describe available settings and
-templatetags.
+Just hit 'cmd' + 's' (or 'Ctrl' + 's') instead of clicking  the "save" button on the bottom of the Django admin.
 
 
 Icon
@@ -68,17 +58,4 @@ and can be found here: http://www.iconarchive.com/show/woocons-icons-by-janik-ba
 Contribute
 ----------
 
-If you want to contribute to this project, please perform the following steps
-
-.. code-block:: bash
-
-    # Fork this repository
-    # Clone your fork
-    mkvirtualenv -p python2.7 django-admin-keyboard-shortcuts
-    make develop
-
-    git co -b feature_branch master
-    # Implement your feature and tests
-    git add . && git commit
-    git push -u origin feature_branch
-    # Send us a pull request for your feature branch
+That's easy - just send your pull request. Thanks!
