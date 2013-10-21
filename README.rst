@@ -7,7 +7,7 @@ Keyboard Shortcuts for your Admin Backend. Currently, only a "save" shortcut is 
 Installation
 ------------
 
-To get the latest stable release from PyPi (not yet available!)
+To get the latest stable release from PyPi 
 
 .. code-block:: bash
 
