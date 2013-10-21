@@ -59,6 +59,12 @@ TODO: Describe usage or point to docs. Also describe available settings and
 templatetags.
 
 
+Icon
+----
+
+The icon is from Janik Baumgartner http://janikbaumgartner.com/
+and can be found here: http://www.iconarchive.com/show/woocons-icons-by-janik-baumgartner.html
+
 Contribute
 ----------
 
