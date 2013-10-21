@@ -1,0 +1,9 @@
+include AUTHORS
+include LICENSE
+include DESCRIPTION
+include CHANGELOG.txt
+include README.md
+graft admin_keyboard_shortcuts
+global-exclude *.orig *.pyc *.log *.swp
+prune admin_keyboard_shortcuts/tests/coverage
+prune admin_keyboard_shortcuts/.ropeproject
