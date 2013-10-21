@@ -7,12 +7,6 @@
 
 {% block branding %}
 <h1 id="site-name">{% trans 'Django administration' %} with Keys</h1>
-
-{% endblock %}
-
-{% block nav-global %}{% endblock %}
-
-{% block extrafooter %}
 <script type="text/javascript">
 django.jQuery(document).keydown(function(e) {
     if ((e.which == '115' || e.which == '83' ) && (e.ctrlKey || e.metaKey))
@@ -25,3 +19,7 @@ django.jQuery(document).keydown(function(e) {
 }); 
 </script>
 {% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+ 
