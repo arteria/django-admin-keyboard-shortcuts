@@ -1,7 +1,7 @@
 Django Admin Keyboard Shortcuts
 ============
 
-Keyboard Shortcuts for your Admin Backend. Currently, only a "save" shortcut is implemented.
+Keyboard Shortcuts for your Admin Backend. See "Usage" section below for all implemented shortcuts.
 
 
 Installation
@@ -51,9 +51,11 @@ Don't forget to collect the icons
 Usage
 -----
 
-Just hit 'cmd' + 's' (or 'Ctrl' + 's') instead of clicking  the "save" button on the bottom of the Django admin.
+* Just hit ``cmd`` + ``s`` (or ``Ctrl`` + ``s``) instead of clicking  the "save" button on the bottom of the Django admin. 
+* Use ``J`` and ``K`` navigation for result lists. Pressing enter on a selected row opens the detail page.
 
 
+ 
 Icon
 ----
 
