@@ -4,7 +4,7 @@
 {% block title %}{{ title }} | {% trans 'Django site admin' %}{% endblock %}
 
 {% block branding %}
-<h1 id="site-name">{% trans 'Django administration' %} {% if "maybe"|display_keyboard_icon %}<img src="{% static "admin_keyboard_shortcuts/CMD-Key-icon.png" %}">{% endif %}</h1>
+<h1 id="site-name">{% trans 'Django administration' %} {% if "maybe"|display_cmd_key_icon %}<img src="{% static "admin_keyboard_shortcuts/CMD-Key-icon.png" %}">{% endif %}</h1>
 <script type="text/javascript">
 django.jQuery(document).keydown(function(e) {
     if ((e.which == '115' || e.which == '83' ) && (e.ctrlKey || e.metaKey))
