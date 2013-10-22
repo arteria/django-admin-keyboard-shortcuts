@@ -13,7 +13,7 @@ if ('undefined' !== typeof(django)) {
     };
     django.jQuery(document).keydown(function(e) {
         // only do J/K nav on result lists and when the search field isn't focused
-        var do_jk_nav = django.jQuery('#result_list') && django.jQuery('#searchbar:focus').length == 0;
+        var do_jk_nav = django.jQuery('#result_list').length && django.jQuery('input:focus').length == 0;
 
         if ((e.which == '115' || e.which == '83' ) && (e.ctrlKey || e.metaKey))
         {
