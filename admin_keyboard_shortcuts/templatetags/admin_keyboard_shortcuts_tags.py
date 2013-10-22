@@ -1,11 +1,12 @@
 from django import template
+from django.conf import settings
+
 
 register = template.Library()
 
-#@register.filter
-#def lower(value):
-#    '''
-#    Converts a string into all lowercase
-#    '''
-#    return value.lower()
-    
+
+@register.filter
+def display_keyboard_icon(dummy):
+    if hasattr(settings, 'HIDE_KEYBOARD_SHORTCUT_ICON') and settings.HIDE_KEYBOARD_SHORTCUT_ICON:
+        return False
+    return True
