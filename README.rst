@@ -51,7 +51,9 @@ Don't forget to collect the icons
 Usage
 -----
 
-Just hit 'cmd' + 's' (or 'Ctrl' + 's') instead of clicking  the "save" button on the bottom of the Django admin.
+* Just hit 'cmd' + 's' (or 'Ctrl' + 's') instead of clicking  the "save" button on the bottom of the Django admin. 
+* Use J/K navigation for result lists. Pressing enter on a selected row opens the detail page.
+
 
 
 Icon
