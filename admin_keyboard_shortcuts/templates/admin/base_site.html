@@ -6,17 +6,65 @@
 {% block branding %}
 <h1 id="site-name">{% trans 'Django administration' %} {% if "maybe"|display_cmd_key_icon %}<img src="{% static "admin_keyboard_shortcuts/CMD-Key-icon.png" %}">{% endif %}</h1>
 <script type="text/javascript">
-django.jQuery(document).keydown(function(e) {
-    if ((e.which == '115' || e.which == '83' ) && (e.ctrlKey || e.metaKey))
-    {
-        e.preventDefault();
-        django.jQuery("input[name='_save']").click();
-        return false;
-    }
-    return true;
-});
+if ('undefined' !== typeof(django)) {
+    // supplement focus prototype for Django's old jQuery
+    django.jQuery.expr[':'].focus = function( elem ) {
+      return elem === document.activeElement && ( elem.type || elem.href );
+    };
+    django.jQuery(document).keydown(function(e) {
+        // only do J/K nav on result lists and when the search field isn't focused
+        var do_jk_nav = django.jQuery('#result_list') && django.jQuery('#searchbar:focus').length == 0;
+
+        if ((e.which == '115' || e.which == '83' ) && (e.ctrlKey || e.metaKey))
+        {
+            e.preventDefault();
+            django.jQuery("input[name='_save']").click();
+            return false;
+        }
+        // J
+        if (do_jk_nav && (e.which == '106' || e.which == '74')) {
+            var highlighted_row = django.jQuery('#result_list tbody tr.hl');
+            if (highlighted_row.length === 0) {
+                django.jQuery('#result_list tbody tr').first().addClass('hl')
+            } else {
+                if (highlighted_row.next().length) {
+                    highlighted_row.removeClass('hl');
+                    highlighted_row.next().addClass('hl');
+                }
+            }
+            return false;
+        }
+        // K
+        if (do_jk_nav && (e.which == '107' || e.which == '75')) {
+            var highlighted_row = django.jQuery('#result_list tbody tr.hl');
+            if (highlighted_row.length === 0) {
+                django.jQuery('#result_list tbody tr').last().addClass('hl')
+            } else {
+                if (highlighted_row.prev().length) {
+                    highlighted_row.removeClass('hl');
+                    highlighted_row.prev().addClass('hl');
+                }
+            }
+            return false;
+        }
+        // Enter, click the first link in the row
+        if (do_jk_nav && e.which == '13' && django.jQuery('#result_list tbody tr.hl').length) {
+            django.jQuery('#result_list tbody tr.hl').find('a').get(0).click();
+            return false;
+        }
+
+        return true;
+    });
+}
+
 </script>
 {% endblock %}
 
 {% block nav-global %}{% endblock %}
 
+{% block extrastyle %}
+<style>
+    #result_list tbody tr.row1.hl { background-color: rgb(209, 221, 243); }
+    #result_list tbody tr.row2.hl { background-color: rgb(230, 230, 230); }
+</style>
+{% endblock %}
