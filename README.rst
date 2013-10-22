@@ -1,7 +1,7 @@
 Django Admin Keyboard Shortcuts
 ============
 
-Keyboard Shortcuts for your Admin Backend. Currently, only a "save" shortcut is implemented.
+Keyboard Shortcuts for your Admin Backend. See "Usage" section below for all implemented shortcuts.
 
 
 Installation
