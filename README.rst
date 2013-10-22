@@ -54,11 +54,13 @@ Usage
 * Just hit 'cmd' + 's' (or 'Ctrl' + 's') instead of clicking  the "save" button on the bottom of the Django admin. 
 * Use J/K navigation for result lists. Pressing enter on a selected row opens the detail page.
 
+
 | Shortcut             | Context | Action |
 | -------------------- | -------- | ----- |
-| <kbd>cmd</kbd> + <kbd>s</kbd> or  <kbd>Ctrl</kbd> + <kbd>s</kbd>  | | Save current object.|
-| <kbd>j</kbd>  | | Navigate one row down, press return to open selected object. |
-| <kbd>k</kbd>  | | Navigate one row down, press return to open selected object. |
+| <kbd>cmd</kbd> + <kbd>s</kbd> or  <kbd>Ctrl</kbd> + <kbd>s</kbd>  | - | Save current object.|
+| <kbd>j</kbd>  | - | Navigate one row down, press return to open selected object. |
+| <kbd>k</kbd>  | - | Navigate one row down, press return to open selected object. |
+
 
 Icon
 ----
