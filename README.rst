@@ -56,7 +56,7 @@ Usage
 
 | Shortcut             | Context | Action |
 | -------------------- | -------- | ----- |
-| `cmd` + `s` or `Ctrl` + `s`  | - | Save current object.|
+| `cmd` + `s` or `Ctrl` + `s`  | x | Save current object.|
 
 
 Icon
