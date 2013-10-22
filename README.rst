@@ -22,16 +22,21 @@ To get the latest commit from GitHub
  
 There are not further dependencies! 
 
-Add ``admin_keyboard_shortcuts`` to your ``INSTALLED_APPS`` before ``django.contrib.admin``
+In your project settings, add ``admin_keyboard_shortcuts`` to your ``INSTALLED_APPS`` before ``django.contrib.admin``
 
 .. code-block:: python
 
     INSTALLED_APPS = (
         ...,
         'admin_keyboard_shortcuts',
-		'django.contrib.admin', 
-		...,
+        'django.contrib.admin', 
+        ...,
     )
+   
+
+
+Optionally, by setting ``ADMIN_KEYBOARD_SHORTCUTS_HIDE_ICON = True`` in project settings, the icon that indicates 
+"shortcut support" will be hidden. 
 
  
 
