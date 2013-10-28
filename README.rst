@@ -51,9 +51,10 @@ Don't forget to collect the icons
 Usage
 -----
 
-* Just hit ``cmd`` + ``s`` (or ``Ctrl`` + ``s``) instead of clicking  the "save" button on the bottom of the Django admin. 
-* Use ``J`` and ``K`` navigation for result lists. Pressing enter on a selected row opens the detail page.
-
+* Just hit ``cmd`` + ``s`` (or ``Ctrl`` + ``s``) instead of clicking the "save" button on the bottom of the Django admin. 
+* Use ``cmd`` + ``o`` (or ``Ctrl`` + ``o``) to save current and open new object (= add another). 
+* Use ``cmd`` + ``c`` (or ``Ctrl`` + ``c``) to save current and continue editing
+* Use ``j`` and ``k`` navigation for result lists. Pressing the ``return`` key on a selected row opens the detail page.
 
  
 Icon

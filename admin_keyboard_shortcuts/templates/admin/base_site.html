@@ -15,12 +15,34 @@ if ('undefined' !== typeof(django)) {
         // only do J/K nav on result lists and when the search field isn't focused
         var do_jk_nav = django.jQuery('#result_list').length && django.jQuery('input:focus').length == 0;
 
-        if ((e.which == '115' || e.which == '83' ) && (e.ctrlKey || e.metaKey))
-        {
-            e.preventDefault();
-            django.jQuery("input[name='_save']").click();
-            return false;
-        }
+		if (e.ctrlKey || e.metaKey) {
+			switch (e.which) {
+				// Save current
+				case '83': // S
+				case '115': // s
+		            e.preventDefault();
+		            django.jQuery("input[name='_save']").click();
+		            return false;
+				
+				// Save current and open new (add another)
+				case '79': // O
+				case '111': // o
+		            e.preventDefault();
+		            django.jQuery("input[name='_addanother']").click();
+		            return false;
+				
+				// Save current and continue editing
+				case '67': // C
+				case '99': // c
+		            e.preventDefault();
+		            django.jQuery("input[name='_continue']").click();
+		            return false;
+				
+				default:
+					break;
+			}  
+		} 
+		
         // J
         if (do_jk_nav && (e.which == '106' || e.which == '74')) {
             var highlighted_row = django.jQuery('#result_list tbody tr.hl');
@@ -35,7 +57,7 @@ if ('undefined' !== typeof(django)) {
             return false;
         }
         // K
-        if (do_jk_nav && (e.which == '107' || e.which == '75')) {
+        else if (do_jk_nav && (e.which == '107' || e.which == '75')) {
             var highlighted_row = django.jQuery('#result_list tbody tr.hl');
             if (highlighted_row.length === 0) {
                 django.jQuery('#result_list tbody tr').last().addClass('hl')
@@ -48,7 +70,7 @@ if ('undefined' !== typeof(django)) {
             return false;
         }
         // Enter, click the first link in the row
-        if (do_jk_nav && e.which == '13' && django.jQuery('#result_list tbody tr.hl').length) {
+        else if (do_jk_nav && e.which == '13' && django.jQuery('#result_list tbody tr.hl').length) {
             django.jQuery('#result_list tbody tr.hl').find('a').get(0).click();
             return false;
         }
