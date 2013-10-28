@@ -74,4 +74,4 @@ Contribute
 
 That's easy - just send your pull request. Thanks!
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/7f7a13db7f686a56c9a5c6b43d6f8486 "githalytics.com")](http://githalytics.com/arteria/django-admin-keyboard-shortcuts)
+[githalytics.com alpha](https://cruel-carlota.pagodabox.com/7f7a13db7f686a56c9a5c6b43d6f8486 "githalytics.com")](http://githalytics.com/arteria/django-admin-keyboard-shortcuts)
