@@ -56,7 +56,13 @@ Usage
 * Use ``cmd`` + ``c`` (or ``Ctrl`` + ``c``) to save current and continue editing
 * Use ``j`` and ``k`` navigation for result lists. Pressing the ``return`` key on a selected row opens the detail page.
 
- 
+
+TODO and planned features
+-------------------------
+* Open new object (= add another) on the for result lists
+* Navigation using ``j`` and ``k`` in admin start page.
+
+
 Icon
 ----
 
