@@ -51,12 +51,12 @@ Don't forget to collect the icons
 Usage
 ============
 
-
-* Just hit ``cmd`` + ``s`` (or ``Ctrl`` + ``s``) instead of clicking the "save" button on the bottom of the Django admin. 
-* Use ``cmd`` + ``o`` (or ``Ctrl`` + ``o``) to save current and open new object (= add another). 
-* Use ``cmd`` + ``c`` (or ``Ctrl`` + ``c``) to save current and continue editing
-* Use ``j`` and ``k`` navigation for result lists. Pressing the ``return`` key on a selected row opens the detail page.
-
+Keyboard Shortcut or Key  | Alternative Keyboard Shortcut | Page | Command
+ ------------- | ------------- | ------------- | -------------
+``Ctrl`` + ``s`` |   ``cmd`` + ``s``  |  Object detail | Save the current object. Is equal to clicking the "save" button on the bottom of page.
+ ``j`` / ``k`` | | Object list | Navigation up and down in the result list. Pressing the ``return`` key on a selected row opens the object detail page.
+``Ctrl`` + ``o`` |   ``cmd`` + ``o``  |  Object detail | Save current and open new object (= add another). 
+``Ctrl`` + ``c`` |   ``cmd`` + ``c``  |  Object detail | Save current and and continue editing. 
 
 TODO and planned features
 ============
