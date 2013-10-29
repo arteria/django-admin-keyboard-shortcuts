@@ -1,11 +1,11 @@
-Django Admin Keyboard Shortcuts
+About Django Admin Keyboard Shortcuts
 ============
 
 Keyboard Shortcuts for your Admin Backend. See "Usage" section below for all implemented shortcuts.
 
 
 Installation
-------------
+============
 
 To get the latest stable release from PyPi 
 
@@ -49,7 +49,8 @@ Don't forget to collect the icons
 
 
 Usage
------
+============
+
 
 * Just hit ``cmd`` + ``s`` (or ``Ctrl`` + ``s``) instead of clicking the "save" button on the bottom of the Django admin. 
 * Use ``cmd`` + ``o`` (or ``Ctrl`` + ``o``) to save current and open new object (= add another). 
@@ -58,19 +59,38 @@ Usage
 
 
 TODO and planned features
--------------------------
+============
+
 * Open new object (= add another) on the for result lists
 * Navigation using ``j`` and ``k`` in admin start page.
 
 
 Icon
-----
+============
+
 
 The icon is from Janik Baumgartner http://janikbaumgartner.com/
 and can be found here: http://www.iconarchive.com/show/woocons-icons-by-janik-baumgartner.html
 
+History
+============
+
+
+Development Version
+-------------------
+
+
+0.1.4
+-----
+* Added new shortcuts, see Usage section.
+* Changed README to Markdown 
+* Startet History
+
+
+
 Contribute
-----------
+============
+
 
 That's easy - just send your pull request. Thanks!
 
