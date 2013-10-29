@@ -79,9 +79,14 @@ History
 Development Version
 -------------------
 
+0.1.5
+-----
+
+* Bugfix release
 
 0.1.4
 -----
+
 * Added new shortcuts, see Usage section.
 * Changed README to Markdown 
 * Startet History
