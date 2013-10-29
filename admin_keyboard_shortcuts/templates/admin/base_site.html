@@ -15,32 +15,20 @@ if ('undefined' !== typeof(django)) {
         // only do J/K nav on result lists and when the search field isn't focused
         var do_jk_nav = django.jQuery('#result_list').length && django.jQuery('input:focus').length == 0;
 
-		if (e.ctrlKey || e.metaKey) {
-			switch (e.which) {
-				// Save current
-				case '83': // S
-				case '115': // s
-		            e.preventDefault();
-		            django.jQuery("input[name='_save']").click();
-		            return false;
-				
-				// Save current and open new (add another)
-				case '79': // O
-				case '111': // o
-		            e.preventDefault();
-		            django.jQuery("input[name='_addanother']").click();
-		            return false;
-				
-				// Save current and continue editing
-				case '67': // C
-				case '99': // c
-		            e.preventDefault();
-		            django.jQuery("input[name='_continue']").click();
-		            return false;
-				
-				default:
-					break;
-			}  
+		if ((e.ctrlKey || e.metaKey) && (e.which == '83' || e.which == '115')) { // s or S
+		    e.preventDefault();
+            django.jQuery("input[name='_save']").click();
+            return false;
+		}
+		else if ((e.ctrlKey || e.metaKey) && (e.which == '79' || e.which == '111')) { // o or O
+		    e.preventDefault();
+            django.jQuery("input[name='_addanother']").click();
+            return false;
+		}
+		else if ((e.ctrlKey || e.metaKey) && (e.which == '67' || e.which == '99')) { // c or C
+		    e.preventDefault();
+            django.jQuery("input[name='_continue']").click();
+            return false;
 		} 
 		
         // J
