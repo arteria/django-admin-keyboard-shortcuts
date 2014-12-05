@@ -1,7 +1,7 @@
-About Django Admin Keyboard Shortcuts
+A Django Admin Keyboard Shortcuts Experiment
 ============
 
-Keyboard Shortcuts for your Admin Backend. See "Usage" section below for all implemented shortcuts.
+Consider this app as an experiment that was abandoned. Do not use it in production. The idea behind this experiment was to provide keyboard shortcuts for your admin site. See "Usage" section below for all implemented shortcuts. 
 
 
 Installation
