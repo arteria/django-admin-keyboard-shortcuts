@@ -56,7 +56,7 @@ Keyboard Shortcut or Key  | Alternative Keyboard Shortcut | Page | Command
 ``Ctrl`` + ``s`` |   ``cmd`` + ``s``  |  Object detail | Save the current object. Is equal to clicking the "save" button on the bottom of page.
  ``j`` / ``k`` | | Object list | Navigation up and down in the result list. Pressing the ``return`` key on a selected row opens the object detail page.
 ``Ctrl`` + ``o`` |   ``cmd`` + ``o``  |  Object detail | Save current and open new object (= add another). 
-``Ctrl`` + ``c`` |   ``cmd`` + ``c``  |  Object detail | Save current and and continue editing. 
+``Ctrl`` + ``e`` |   ``cmd`` + ``e``  |  Object detail | Save current and and continue editing. 
 
 TODO and planned features
 ============
